@@ -39,7 +39,7 @@ const App = () => {
 		// filter
 
 		const filterArgs = user.filter((user)=>{
-			const userName = user.name.first + " " + user.name.last;
+			const userName = (user.name.first + " " + user.name.last).toLowerCase();
 		if (userName.includes(value.toLowerCase())) {
 			return true;
 		}
